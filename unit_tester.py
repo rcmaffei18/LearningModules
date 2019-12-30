@@ -23,5 +23,13 @@ class TestCap(unittest.TestCase):
         result = cap_text.cap_text(text)
         self.assertEqual(result, 'Ooga Booga')
 
+    def test_three_word(self):
+        '''
+        another to test for three words
+        '''
+        text = 'shooby doobie doo'
+        result = cap_text.cap_text(text)
+        self.assertEqual(result, 'Shooby Doobie Doo')
+
 if __name__ == '__main__':
     unittest.main()
