@@ -33,7 +33,9 @@ print()
 
 def myfunc(**kwargs):
     '''
-    stuff
+    this function takes in any kwargs in a dictionary format
+    can set any value you want for the key, followed by the
+    corresponding value
     '''
     if 'fruit' in kwargs:
         print("My fruit of choice is {}".format(kwargs['fruit']))
@@ -50,7 +52,9 @@ print()
 
 def myfunc2(*args, **kwargs):
     '''
-    stuff
+    Can also do both args and kwargs.  Args will be passed in via single
+    inputs, while kwargs are added after in dictionary format.
+    These must be entered in order, can't add more args to the end after kwargs
     '''
     print(args)
     print(kwargs)
